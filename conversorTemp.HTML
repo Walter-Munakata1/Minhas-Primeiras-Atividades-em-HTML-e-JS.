@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Minhas habilidades!</h1>
+    <p>estou aprendendo html, JS, CSS. sei o basico de C# e PYTHON.</p>
+    <p>estou fazendo analize e desinvolvimento de sistemas ah alguns meses.</p>
+
+    <h1>Meus Projetos de Logica de Programacao!</h1>
+    <p>1- fiz um mercadinho logico.</p>
+    <p>2- fiz um sistema de conversao de moedas.</p>
+    <p>3- menu de um restaurant.</p>
+    <p>4- uma calculadora.</p>
+    <p>5- verificador de idade.</p>
+    <p>entre varios outros projetos. Vale lembrar que todos eles foram feitos em C#</p>
+
+    <h3>conversão de temperatura!</h3>
+
+    <label for="celsius">celsius</label>
+    <input type="text" id="celsius" onkeyup="converterFahrenheit()">
+
+    <br><br>
+
+    <label for="fahrenheit">fahrenheit</label>
+    <input type="text" id="fahrenheit" onkeyup="converterCelsius()">
+
+    <script>
+        function converterFahrenheit()
+        {
+            let celsius =document.getElementById("celsius").value;
+            let fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
+        }
+
+
+        function converterCelsius()
+        {
+            let fahrenheit =document.getElementById("fahrenheit").value;
+            let celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById("celsius").value = celsius.toFixed(2);
+        }
+    </script>
+    
+</body>
+</html>
